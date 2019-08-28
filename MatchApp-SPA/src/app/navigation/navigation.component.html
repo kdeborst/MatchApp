@@ -19,7 +19,7 @@
       <a class="dropdown-toggle navbar-item text-light" dropdownToggle><i class="fas fa-user"></i>&nbsp; {{authService.decodedToken?.unique_name | titlecase}}&nbsp;</a>
 
       <div class="dropdown-menu mt-2" *dropdownMenu>
-        <a class="dropdown-item text-secondary" ><i class="fas fa-user-edit"></i> Edit Profile</a>
+        <a class="dropdown-item text-secondary" [routerLink]="['/member/edit']"><i class="fas fa-user-edit"></i> Edit Profile</a>
         <div class="dropdown-divider"></div>
         <a class="dropdown-item text-secondary" (click)="logout()"><i class="fas fa-sign-out-alt"></i> Logout</a>
       </div>
